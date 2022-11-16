@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: lucida console, courier new, courier, monospace;
+}
+#codeEditor,
+#lineCounter {
+	margin: 0;
+	padding: 10px 0;
+	height: 50vh;
+	border-radius: 0;
+	resize: none;
+	font-size: 16px;
+	line-height: 1.2;
+	outline: none;
+}
+#lineCounter:focus-visible,
+#codeEditor:focus-visible {
+	outline: none;
+}
+#lineCounter {
+	display: flex;
+	border-color: transparent;
+	overflow-y: hidden;
+	text-align: center;
+	box-shadow: none;
+	color: #707070;
+	background-color: #d8d8d8;
+	position: absolute;
+	width: 3.5rem;
+	/* Determine appearance of line counter */
+	background-color: #e1dfdf;
+	border-color: #c5c5c5;
+	color: #928869;
+}
+#codeEditor {
+	padding-left: calc(3.5rem + 5px);
+	width: 100%;
+	/* Determine appearance of code editor */
+	background-color: #ffffff;
+	border-color: #c5c5c5;
+	color: black;
+}
+.output {
+	height: 150px;
+	background: black;
+	color: white;
+	padding: 1rem;
+	margin-top: 10px;
+}
+#compile {
+	padding: 0.6rem;
+	background-color: #ffc107;
+	border: 0px;
+	cursor: pointer;
+	margin: 10px;
+}
+.head {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+select {
+	width: 100px;
+	color: black;
+}

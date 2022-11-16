@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- <link rel="stylesheet" type="text/css" href="/static/js/codemirror-5.62.0/lib/codemirror.css"></link> -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="head">
+			<h2>Type Your Code</h2>
+			<select name="languages" id="languages">
+				<option value="0">Python</option>
+				<option value="4">JavaScript</option>
+				<option value="7">C</option>
+				<option value="77">CPP</option>
+				<option value="8">Java</option>
+			</select>
+		</div>
+		<div class="editor">
+			<textarea id="lineCounter" wrap="off" readonly>1.</textarea
+			><textarea id="codeEditor" wrap="off"></textarea>
+		</div>
+		<div class="output">OUTPUT:</div>
+		<button id="compile">COMPILE</button>
+		<script src="scriptEditor.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
